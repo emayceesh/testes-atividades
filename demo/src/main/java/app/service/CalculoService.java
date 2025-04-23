@@ -24,7 +24,6 @@ public class CalculoService {
 		calculo.setMedia(this.media(entrada.getLista()));
 		calculo.setMediana(this.mediana(entrada.getLista()));
 
-		this.calculoRepository.save(calculo);
 		return calculo;
 
 	}
