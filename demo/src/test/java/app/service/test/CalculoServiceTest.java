@@ -111,7 +111,7 @@ public class CalculoServiceTest {
 	}
 	
 	@Test
-    @DisplayName("Cena 07 - Testar média com valor negativo incluso") // ALTERADO
+    @DisplayName("Cena 07 - Testar média com valor negativo incluso") 
     void cenario07() {
         List<Integer> lista = new ArrayList<>();
         lista.add(-10);
@@ -124,7 +124,7 @@ public class CalculoServiceTest {
 	
 	//TESTES DE MAIOR NÚMERO 
 	@Test
-    @DisplayName("Cena 08 - Testar maior número com valor padrão") // ALTERADO
+    @DisplayName("Cena 08 - Testar maior número com valor padrão") 
     void cenario08() {
         List<Integer> lista = new ArrayList<>();
         lista.add(1);
@@ -157,7 +157,7 @@ public class CalculoServiceTest {
 
 	//TESTES MENOR NÚMERO 
 	@Test
-    @DisplayName("Cena 11 - Testar menor número com valor padrão") // ALTERADO
+    @DisplayName("Cena 11 - Testar menor número com valor padrão") 
     void cenario11() {
         List<Integer> lista = new ArrayList<>();
         lista.add(7);
@@ -211,9 +211,9 @@ public class CalculoServiceTest {
 	}
 	
 	@Test
-    @DisplayName("Cena 16 - Testar moda com vários números com mesma frequência") // ALTERADO
+    @DisplayName("Cena 16 - Testar moda com vários números com mesma frequência") 
     void cenario16() {
-        List<Integer> lista = List.of(1, 2, 3, 4); // Todos aparecem 1 vez
+        List<Integer> lista = List.of(1, 2, 3, 4); 
         double moda = this.calculoService.moda(lista);
         Assertions.assertThat(moda).isIn(1.0, 2.0, 3.0, 4.0);
     }
@@ -231,7 +231,7 @@ public class CalculoServiceTest {
 	}
 	
 	@Test
-    @DisplayName("Cena 18 - Testar produto com número zero") // ALTERADO
+    @DisplayName("Cena 18 - Testar produto com número zero") 
     void cenario18() {
         List<Integer> lista = List.of(2, 0, 4);
         int produto = this.calculoService.produto(lista);
@@ -255,7 +255,7 @@ public class CalculoServiceTest {
 	}
 
 	@Test
-    @DisplayName("Cena 21 - Testar desvio padrão com todos iguais") // ALTERADO
+    @DisplayName("Cena 21 - Testar desvio padrão com todos iguais") 
     void cenario21() {
         List<Integer> lista = List.of(10, 10, 10, 10);
         double resultado = this.calculoService.desvioPadrao(lista);
